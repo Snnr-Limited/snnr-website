@@ -17,35 +17,35 @@ Your job is to **interview the user** about the specific page or site they want 
 
 ### Color Tokens
 ```css
---color-bg:        #0a0a0f;   /* page background */
---color-surface:   #13131a;   /* cards, nav, inputs */
---color-border:    #1e1e2e;   /* all borders */
---color-accent:    #6c63ff;   /* primary accent (purple) */
---color-accent-2:  #a78bfa;   /* secondary accent (soft purple) */
---color-text:      #e2e2f0;   /* body copy */
---color-muted:     #7a7a9a;   /* secondary text, placeholders */
+--color-bg:        #f7f1e8;   /* page background */
+--color-surface:   #fffaf4;   /* cards, nav, inputs */
+--color-border:    #e5d6c2;   /* all borders */
+--color-accent:    #2f7a6d;   /* primary accent (calm teal) */
+--color-accent-2:  #d98a6a;   /* secondary accent (soft terracotta) */
+--color-text:      #2f2923;   /* body copy */
+--color-muted:     #74685b;   /* secondary text, placeholders */
 ```
 
 ### Typography
-- Font: **Inter** (Google Fonts, weights 400 / 500 / 600 / 700 / 800)
+- Font: **Nunito Sans** (Google Fonts, weights 400 / 500 / 600 / 700 / 800)
 - Base size: `1rem` / `16px`
 - Heading scale: `clamp()` fluid sizing
-- Letter-spacing on headings: `-0.03em` to `-0.04em`
-- Line-height body: `1.6`
+- Letter-spacing on headings: `-0.01em` to `-0.02em`
+- Line-height body: `1.7`
 
 ### Buttons
-- **Primary**: `background: linear-gradient(135deg, #6c63ff, #a78bfa)`, white text, `border-radius: 999px`, `padding: 0.8rem 2rem`
-- **Ghost**: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, white text, same radius/padding
-- Both: `font-weight: 600`, `transition: transform 0.15s, box-shadow 0.15s`; on hover lift `translateY(-2px)` with purple shadow
+- **Primary**: `background: linear-gradient(135deg, #2f7a6d, #d98a6a)`, white text, `border-radius: 999px`, `padding: 0.85rem 2rem`
+- **Ghost**: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, `color: var(--color-text)`, same radius/padding
+- Both: `font-weight: 700`, `transition: transform 0.15s, box-shadow 0.15s`; on hover lift `translateY(-2px)` with a soft teal shadow
 
 ### UI Components
-- **Cards**: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, `border-radius: 12px`, `padding: 2rem`; on hover border becomes `var(--color-accent)` and card lifts `translateY(-4px)`
-- **Nav**: sticky, `backdrop-filter: blur(16px)`, semi-transparent background `rgba(10,10,15,0.75)`, bottom border `var(--color-border)`
-- **Section labels**: `0.8rem`, uppercase, `letter-spacing: 0.1em`, color `var(--color-accent)`, `font-weight: 600`
+- **Cards**: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, `border-radius: 16px`, `padding: 2rem`; on hover border becomes `var(--color-accent)` and card lifts `translateY(-4px)`
+- **Nav**: sticky, `backdrop-filter: blur(16px)`, semi-transparent background `rgba(247,241,232,0.88)`, bottom border `var(--color-border)`
+- **Section labels**: `0.82rem`, uppercase, `letter-spacing: 0.08em`, color `var(--color-accent)`, `font-weight: 700`
 - **Dividers**: `border-top: 1px solid var(--color-border)`
 - **Inputs**: `background: var(--color-surface)`, `border: 1px solid var(--color-border)`, `border-radius: 8px`; focus border becomes `var(--color-accent)`
-- **Gradient text**: headings use `linear-gradient(160deg, #fff 40%, var(--color-muted))` clipped to text
-- **Glow effect**: radial gradient `rgba(108, 99, 255, 0.15)` used in hero backgrounds
+- **Gradient text**: headings use `linear-gradient(160deg, var(--color-text) 30%, var(--color-muted))` clipped to text
+- **Glow effect**: radial gradient `rgba(47, 122, 109, 0.12)` used in hero backgrounds
 
 ### Layout
 - Max content width: `1100px`, centered with `margin: 0 auto`
@@ -107,7 +107,7 @@ Once confirmed, generate exactly two files:
 
 ### `src/index.html`
 - Valid HTML5, `lang="en"`
-- Link Inter from Google Fonts
+- Link Nunito Sans from Google Fonts
 - Link `./styles.css`
 - Use semantic elements: `<nav>`, `<main>`, `<section id="...">`, `<footer>`
 - All section IDs match nav anchor links
@@ -136,5 +136,5 @@ Once confirmed, generate exactly two files:
 - **Always** generate both `src/index.html` and `src/styles.css` together.
 - If a `src/` directory or either file already exists, read it first and update it rather than overwriting unrelated content.
 - Keep the CSS clean: no unused rules, group by component.
-- All copy must be professional and appropriate for a business consultancy / technology company.
+- All copy must be professional, plain-language, and easy for non-technical visitors to understand.
 - If the user provides content that doesn't make sense for the page type, ask for clarification before proceeding.
