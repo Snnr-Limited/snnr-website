@@ -5,15 +5,15 @@
 }
 
 :root {
-  --color-bg:       #0a0a0f;
-  --color-surface:  #13131a;
-  --color-border:   #1e1e2e;
-  --color-accent:   #6c63ff;
-  --color-accent-2: #a78bfa;
-  --color-text:     #e2e2f0;
-  --color-muted:    #7a7a9a;
-  --font: 'Inter', system-ui, sans-serif;
-  --radius: 12px;
+  --color-bg:       #f7f1e8;
+  --color-surface:  #fffaf4;
+  --color-border:   #e5d6c2;
+  --color-accent:   #2f7a6d;
+  --color-accent-2: #d98a6a;
+  --color-text:     #2f2923;
+  --color-muted:    #74685b;
+  --font: 'Nunito Sans', system-ui, sans-serif;
+  --radius: 16px;
 }
 
 html {
@@ -25,7 +25,7 @@ body {
   color: var(--color-text);
   font-family: var(--font);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   min-height: 100vh;
 }
 
@@ -38,7 +38,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 2.5rem;
-  background: rgba(10, 10, 15, 0.75);
+  background: rgba(247, 241, 232, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-border);
@@ -89,7 +89,7 @@ nav {
   position: absolute;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(108, 99, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(47, 122, 109, 0.12) 0%, transparent 70%);
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
@@ -116,7 +116,7 @@ nav {
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin-bottom: 1.25rem;
-  background: linear-gradient(160deg, #fff 40%, var(--color-muted));
+  background: linear-gradient(160deg, var(--color-text) 30%, var(--color-muted));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -134,10 +134,10 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.8rem 2rem;
+  padding: 0.85rem 2rem;
   border-radius: 999px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font);
   text-decoration: none;
   cursor: pointer;
@@ -147,7 +147,7 @@ nav {
 
 .btn:hover:not(.btn-disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.35);
+  box-shadow: 0 8px 30px rgba(47, 122, 109, 0.35);
 }
 
 .btn-primary {
@@ -182,11 +182,11 @@ section {
 }
 
 .section-label {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--color-accent);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
@@ -283,8 +283,8 @@ section {
   margin-left: auto;
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
-  background: rgba(108, 99, 255, 0.15);
-  border: 1px solid rgba(108, 99, 255, 0.3);
+  background: rgba(47, 122, 109, 0.15);
+  border: 1px solid rgba(47, 122, 109, 0.3);
   color: var(--color-accent-2);
   font-size: 0.75rem;
   font-weight: 600;
@@ -390,8 +390,8 @@ section {
 .roadmap-tag {
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
-  background: rgba(108, 99, 255, 0.08);
-  border: 1px solid rgba(108, 99, 255, 0.2);
+  background: rgba(47, 122, 109, 0.08);
+  border: 1px solid rgba(47, 122, 109, 0.2);
   color: var(--color-accent-2);
   font-size: 0.8rem;
   font-weight: 500;
